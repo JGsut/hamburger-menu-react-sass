@@ -6,7 +6,7 @@ function Menu() {
       <div className='menu-wrap'>
         <input type='checkbox' className='toggler' />
         <div className='hamburger'>
-          <div>ii</div>
+          <div></div>
         </div>
         <div className='menu'>
           <div>
