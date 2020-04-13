@@ -9,11 +9,28 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     width: 50px;
     height: 50px;
     opacity: 0;
+  }
+
+  // * rotate lines
+  .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  // turn lines into X
+  .toggler:checked + .hamburger > div::before,
+  .toggler:checked + .hamburger > div::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  // When is checked rotated on hover
+  .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
   }
 
   // hamburger - empty div
@@ -40,6 +57,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.4s ease;
 
       // Top and bottom lines
       &::before,
