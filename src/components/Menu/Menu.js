@@ -4,10 +4,13 @@ function Menu() {
   return (
     <div>
       <div className='menu-wrap'>
+        {/* 1. input as box for hamburger menu */}
         <input type='checkbox' className='toggler' />
+        {/* 2. hamburger menu */}
         <div className='hamburger'>
           <div></div>
         </div>
+        {/* 3. menu navigation */}
         <div className='menu'>
           <div>
             <div>
